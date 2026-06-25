@@ -758,7 +758,7 @@ input:checked ~ .text::after {
   color: #FFD41D;
 }
 .nav__list li a:hover .svg path {
-  fill: #FFD41D;
+  stroke: #FFD41D;
 }
 
 .main {
