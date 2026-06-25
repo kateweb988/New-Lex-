@@ -853,7 +853,7 @@ input:checked ~ .text::after {
   display: flex;
   justify-content: flex-end;
   transition: 0.5s;
-  opacity: 0;
+  opacity: 1;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
@@ -877,6 +877,7 @@ input:checked ~ .text::after {
 }
 .info__row a:hover span {
   opacity: 1;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 .info__row a:hover:before {
   opacity: 1;
@@ -990,7 +991,7 @@ input:checked ~ .text::after {
 }
 .tabs__btns a.active {
   background: #FFD41D;
-  color: white;
+  color: black;
 }
 .tabs__item {
   display: flex;
@@ -1196,9 +1197,10 @@ input:checked ~ .text::after {
 .order__light {
   position: absolute;
   top: -88px;
-  left: -162px;
+  left: -339px;
   z-index: 0;
   opacity: 0.8;
+  width: 1185px;
 }
 .order__side {
   width: 50%;
@@ -3172,6 +3174,9 @@ input.error {
   }
   .popup__bg, .popup__row {
     display: none;
+  }
+  .order__light {
+    width: auto;
   }
 }
 @media (max-width: 991px) {

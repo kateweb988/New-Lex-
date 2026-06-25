@@ -327,7 +327,7 @@ input:checked ~ .text::after
             display: flex
             justify-content: flex-end
             transition: 0.5s 
-            opacity: 0
+            opacity: 1
             font-size: 16px
             line-height: 16px 
             font-weight: 500
@@ -348,6 +348,7 @@ input:checked ~ .text::after
             border: 1px solid $yel
             span 
                opacity: 1
+               text-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
             &:before 
                opacity: 1
 .help 
@@ -441,7 +442,7 @@ input:checked ~ .text::after
          width: max-content
          &.active 
             background: $yel
-            color: white
+            color: black
    &__item 
       display: flex
       flex-direction: column 
@@ -611,9 +612,10 @@ input:checked ~ .text::after
    &__light 
       position: absolute
       top: -88px
-      left: -162px
+      left: -339px
       z-index: 0
       opacity: 0.8
+      width: 1185px
    &__side 
       width: 50%
       position: relative
