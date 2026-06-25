@@ -331,7 +331,7 @@ input:checked ~ .text::after
             font-size: 16px
             line-height: 16px 
             font-weight: 500
-            color: #000000
+            color: #4A4A4A
             margin-left: auto
          &:before 
             display: block
@@ -1180,13 +1180,14 @@ input:checked ~ .text::after
    left: 0
    width: 100%
    height: 100%
-   padding: 80px 40px 
+   padding: 60px 40px 
    background: #040404
    transform: translateX(-100%)
    transition: transform 0.5s
    z-index: 10
    overflow: hidden
    display: block
+   overflow-y: auto
    &.active
       transform: translateX(0%)
    &__fig 
@@ -1223,7 +1224,7 @@ input:checked ~ .text::after
       position: relative
       z-index: 2
       color: white
-      margin-bottom: 70px
+      margin-bottom: 50px
 .back
    width: max-content
    margin-bottom: 50px
@@ -1942,8 +1943,14 @@ input.error
          &:hover 
             background: black 
             color: white
- 
-
+.submenu 
+   display: none
+   padding-top: 10px
+.submenu a 
+   display: block
+   margin-bottom: 10px
+.has-submenu.active .submenu 
+   display: block
 
 
 

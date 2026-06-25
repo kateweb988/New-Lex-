@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 });
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+	btn.addEventListener('click', function(e) {
+		e.preventDefault();
+
+		this.closest('.has-submenu').classList.toggle('active');
+	});
+});
 document.addEventListener('DOMContentLoaded', function () {
 
     $('.articmodal-close').on('click', function (e) {
