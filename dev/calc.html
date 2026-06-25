@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>New Lex</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<!-- <link rel="icon" href="/img/favicon.svg" type="image/x-icon">
+	<link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon"> -->
+	
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<aabded63-7f9c-4b97-ad2a-98203b019a6b>"
+		type="text/javascript"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body class="body">
+	<div class="body-wrap">
+		<div class="menu">
+			<p class="menu__fig">
+				NewLex
+			</p>
+			<div class="container">
+				<a href="#" class="back">
+					<img src="img/back.svg" alt="" class="svg">
+				</a>
+				<h2>
+					Категории <br> услуг
+				</h2>
+				<ul class="menu__list q">
+					<li>
+						<a href="#">
+							Юридическая помощь <br> селлерам
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Арюитражный  + <br>
+							юрист
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Взыскание дебиторской <br> задолженноссти
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Корпоративные <br> споры
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Банкротство <br> юр лиц
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Юр экспертиза <br>
+							договоров
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Регистраця  + <br>
+							бизнеса
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Споры по строительству <br> и подряду
+						</a>
+						<a href="#">
+							Решение споров в <br> досудебном порядке
+						</a>
+						<a href="#">
+							Таможенные споры
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Трудовые <br> споры
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Юр помощь <br>
+							селлерам
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Юрист коммерческой <br> нидвижимости
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="nav__top">
+					<div class="container">
+						<div class="nav__row q">
+							<a href="main.html" class="nav__logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+							<div class="nav__info q">
+								<div class="nav__socials q">
+									<a href="#" target="_blank">
+										<img src="img/soc1.svg" alt="" class="svg">
+									</a>
+									<a href="#" target="_blank">
+										<img src="img/soc2.svg" alt="" class="svg">
+									</a>
+								</div>
+								<a href="tel:+74951283464" class="nav__tel">
+									+7 (495) 128-34-64
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="nav__box q">
+						<div class="nav__area q">
+							<div class="switch">
+								<input type="checkbox" id="lang">
+								<label for="lang" class="toggle"></label>
+								<span class="text"></span>
+							</div>
+							<div class="menu-btn"></div>
+						</div>
+						<div class="nav__list q">
+							<li>
+								<a href="#">
+									Бухгалтерские услуги
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Юридические услуги
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Блог
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Личный кабинет <img src="img/arrow.svg" alt="" class="svg">
+								</a>
+							</li>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="calc" id="calc">
+			<div class="container">
+				<h1>Калькулятор <br>
+					расчета
+				</h1>
+				<div class="calc__box">
+					<h2>
+						Расчитайте стоимость бухгалтерского <br> обслуживания
+					</h2>
+					<div class="calculator">
+						<div class="sliders">
+							<div class="slider-item">
+								<p>
+									Система налогооблажения
+								</p>
+								<div class="slider-value">50%</div>
+								<input type="range" min="0" max="100" value="50" class="custom-range" data-type="percent">
+							</div>
+
+							<div class="slider-item">
+								<p>
+									Кол-во сотрудников
+								</p>
+								<div class="slider-value">2</div>
+								<input type="range" min="0" max="100" value="25" class="custom-range" data-type="employees">
+							</div>
+
+							<div class="slider-item">
+								<p>
+									Кол-во документов в месяц
+								</p>
+								<div class="slider-value">75</div>
+								<input type="range" min="0" max="100" value="75" class="custom-range">
+							</div>
+						</div>
+
+						<div class="options">
+
+							<div class="radio-group">
+								<p>
+									Форма бизнеса
+								</p>
+								<div class="calc__flex q">
+									<label class="custom-radio">
+										<input type="radio" name="company" checked>
+										<span></span>
+										ООО
+									</label>
+
+									<label class="custom-radio">
+										<input type="radio" name="company">
+										<span></span>
+										ИП
+									</label>
+
+									<label class="custom-radio">
+										<input type="radio" name="company">
+										<span></span>
+										НКО
+									</label>
+								</div>
+							</div>
+
+							<div class="radio-group">
+								<p>
+									Заголовок
+								</p>
+								<div class="calc__flex q">
+									<label class="custom-radio">
+										<input type="radio" name="service" checked>
+										<span></span>
+										ККМ, эквайринг
+									</label>
+
+									<label class="custom-radio">
+										<input type="radio" name="service">
+										<span></span>
+										Договоры комиссии / агентские
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="calc__block">
+							<div class="calc__area q">
+								<p>
+									Стоимость: 5 000 <span> /Руб</span>
+								</p>
+								<a href="#" class="btn">
+									Оставить заявку
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box q">
+					<div class="footer__info">
+						<img src="img/f-logo.svg" alt="">
+						<a href="mailto:info@newlex.ru">
+							info@newlex.ru
+						</a>
+						<a href="tel:+74951283464">
+							+7 (495) 128-34-64
+						</a>
+					</div>
+					<div class="footer__content">
+						<ul class="footer__list">
+							<li>
+								<a href="#">
+									Бухгалтерские услуги
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Личный кабинет
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Юр услуги для бизнеса
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Юр услуги для физ лиц
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<div class="footer__com q">
+							<p>
+								Разработчик
+							</p>
+							<a href="https://gasfort.ru/" target="_blank">
+								<img src="img/com.svg" alt="">
+								<img src="img/company2.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container cont">
+					<div class="footer__flex q">
+						<div class="footer__top q">
+							<div class="footer__text">
+								<p>
+									ИНН: 7736276762
+								</p>
+								<p>
+									ОГРН: 1167746846761
+								</p>
+								<p>
+									Организация: ООО «Центр юридических исследований»
+								</p>
+							</div>
+						</div>
+						<div class="footer__right q">
+							<div class="footer__socials q">
+								<a href="#" target="_blank">
+									<img src="img/soc3.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/soc4.svg" alt="" class="svg">
+								</a>
+							</div>
+							<p>
+								117485, г Москва, ул. Профсоюзная, д. 84/32, стр. 14, подъезд А6
+							</p>
+						</div>
+					</div>
+					<div class="footer__last q">
+						<p class="footer__rights">
+							©<span>2016-2023 NEW LEX</span> ВСЕ ПРАВА ПРИНАДЛЕЖАТ КОМПАНИИ ООО «ЦЕНТР ЮРИДИЧЕСКИХ ИССЛЕДОВАНИЙ»
+						</p>
+						<div class="footer__links q">
+							<a href="#">
+								Cоглашение на обработку персональных данных
+							</a>
+							<a href="#">
+								Политика конфиденциальности
+							</a>
+							<a href="#">
+								Оферта
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<script src="js/all.js"></script>
+</body>
+
+</html>

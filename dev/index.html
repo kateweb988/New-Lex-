@@ -21,6 +21,8 @@
 	<meta property="og:description" content="">
 
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -68,17 +70,99 @@
 				Контакты
 			</a>
 		</li>
+		<li style="width: 30%; margin: 0 auto 40px;">
+			<a href="calc.html"
+				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">
+				Калькулятор
+			</a>
+		</li>
 	</ul>
 	<div class="d-flex"
 		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
-		<a href="#" class="btn btn_1" style="margin: 20px;">
+		<a href="#" class="btn btn_1 a1" style="margin: 20px;">
 			кнопка
 		</a>
 		<a href="#" class="btn btn_2" style="margin: 20px;">
 			кнопка
 		</a>
 	</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call">
+			<div class="popup-call__box call">
+				<div class="box-modal__close articmodal-close">
+					<img src="img/close.svg" alt="">
+				</div>
+				<h2>
+					Решим самую сложную <span class="yel">ситуацию</span> 
+				</h2>
+				<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+					<input type="text" placeholder="Ваше имя" class="form__field" required="" name="name">
+					<input type="tel" placeholder="Номер телефона" class="form__field tel" required="" name="tel">
+					<button class="btn" data-submit>
+						Оставить заявку
+					</button>
+				</form>
+				<div class="popup__row q">
+					<div class="popup__item">
+						<span>
+							25+
+						</span>
+						<p>
+							Лет на юридической <br> арене
+						</p>
+					</div>
+					<div class="popup__item">
+						<span>
+							4000
+						</span>
+						<p>
+							Выигранных <br>
+							сдебных процессов
+						</p>
+					</div>
+					<div class="popup__item">
+						<span>
+							47+
+						</span>
+						<p>
+							Крупных партнера  <br>
+							компании
+						</p>
+					</div>
+				</div>
+				<p class="popup__bg">
+					NewLex
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-thank">
+			<div class="popup-call__box call">
+				<div class="box-modal__close articmodal-close">
+					<img src="img/close.svg" alt="">
+				</div>
+				<img src="img/thank.svg" alt="">
+				<h2>
+					Ваша заявка отправленна
+				</h2>
+				<p>
+					Скоро мы свяжемся с вами и ответим на интересующие вас вопросы.
+				</p>
+				<a href="main.html" class="btn btn_2">
+					Вернуться на сайт
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
 	<script src="js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 </body>
 
 </html>

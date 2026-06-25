@@ -73,20 +73,44 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 document.addEventListener('DOMContentLoaded', function () {
-  $('.articmodal-close').click(function (e) {
-    $.arcticmodal('close');
 
-  });
-  $('.a1').click(function (e) {
-    e.preventDefault();
-    $('#popup-call').arcticmodal({
+    $('.articmodal-close').on('click', function (e) {
+        e.preventDefault();
+
+        $.arcticmodal('close', {
+            speed: 0
+        });
     });
-  });
-  $('.a2, .link').click(function (e) {
-    e.preventDefault();
-    $('#popup-call2').arcticmodal({
+
+    $('.a1').on('click', function (e) {
+        e.preventDefault();
+
+        $('#popup-call').arcticmodal({
+            openEffect: {
+                type: 'none',
+                speed: 0
+            },
+            closeEffect: {
+                type: 'none',
+                speed: 0
+            }
+        });
     });
-  });
+
+    $('.a2, .link').on('click', function (e) {
+        e.preventDefault();
+
+        $('#popup-call2').arcticmodal({
+            openEffect: {
+                type: 'none',
+                speed: 0
+            },
+            closeEffect: {
+                type: 'none',
+                speed: 0
+            }
+        });
+    });
 
 });
 document.addEventListener("DOMContentLoaded", () => {
@@ -175,6 +199,42 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
     })
   });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const sliders = document.querySelectorAll('.custom-range');
+
+    function updateSlider(slider) {
+        const value = slider.parentElement.querySelector('.slider-value');
+
+        const min = Number(slider.min);
+        const max = Number(slider.max);
+
+        const percent = ((slider.value - min) / (max - min)) * 100;
+
+        if (slider.dataset.type === 'percent') {
+            value.textContent = slider.value + '%';
+        } else {
+            value.textContent = slider.value;
+        }
+
+        slider.style.background = `
+            linear-gradient(
+                to right,
+                #FFD41D 0%,
+                #FFD41D ${percent}%,
+                #ddd ${percent}%,
+                #ddd 100%
+            )
+        `;
+    }
+
+    sliders.forEach(slider => {
+        updateSlider(slider);
+
+        slider.addEventListener('input', () => {
+            updateSlider(slider);
+        });
+    });
 });
 document.addEventListener('DOMContentLoaded', function () {
   const swiper1 = new Swiper('.swiper1', {

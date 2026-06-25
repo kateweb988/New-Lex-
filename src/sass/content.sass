@@ -12,7 +12,7 @@ input:-moz-placeholder
    z-index: 10
    cursor: pointer
    position: absolute
-   top: 20px
+   top: -10%
    right: 20px
    cursor: pointer
    fill: white
@@ -28,13 +28,14 @@ input:-moz-placeholder
       transform: rotate(90deg)
 .box-modal 
    position: relative
+   transition: 0s
 .popup-call__box 
    position: absolute
    top: -16rem
    left: 50%
    height: auto
    margin-left: -295px
-   overflow: hidden
+   overflow: visible
    height: max-content
    transition: 0.5s all
    box-sizing: border-box
@@ -1737,6 +1738,209 @@ input:checked ~ .text::after
       width: 100% 
       height: 413px
       filter: sepia(100%) saturate(300%) hue-rotate(340deg)
+
+// .calculator  
+//    max-width: 700px 
+//    margin: 40px auto 
+
+
+.sliders  
+   display: flex 
+   gap: 40px 
+   margin-bottom: 70px 
+.slider-item
+   width: 269px
+   p 
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      color: #000000
+      opacity: 0.5
+      margin-bottom: 18px
+.slider-value  
+   margin-bottom: 5px 
+   font-weight: 600
+   font-size: 20px
+   line-height: 26px
+   color: #000000
+.custom-range  
+   width: 100%
+   height: 2px
+   border-radius: 10px
+   outline: none
+   appearance: none
+   -webkit-appearance: none
+   background: linear-gradient to right, #FFD41D 50%, #ddd 50%
+   border: none !important
+.custom-range::-webkit-slider-thumb  
+   appearance: none 
+   -webkit-appearance: none 
+   width: 36px 
+   height: 18px 
+   background: #FFD41D 
+   border-radius: 60px 
+   cursor: pointer 
+   border: none 
+.custom-range::-moz-range-thumb  
+   width: 36px 
+   height: 18px 
+   background: #FFD41D 
+   border-radius: 60px 
+   cursor: pointer 
+   border: none 
+.options  
+   display: flex 
+   gap: 60px 
+   flex-wrap: wrap 
+.radio-group  
+   display: flex 
+   flex-direction: column 
+   gap: 15px 
+   p 
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      color: #000000
+      opacity: 0.5
+      margin-bottom: 10px
+.custom-radio  
+   display: flex 
+   align-items: center 
+   gap: 12px 
+   cursor: pointer 
+   font-weight: 600
+   font-size: 20px
+   line-height: 26px
+   color: #000000
+.custom-radio input  
+   display: none 
+.custom-radio span  
+   width: 24px 
+   height: 24px 
+   border-radius: 50% 
+   transition: .2s 
+   flex-shrink: 0 
+   border: 1px solid rgba(0, 0, 0, 0.05)
+.custom-radio input:checked + span  
+   background: #FFD41D 
+.calc
+   background: #F9F9F9
+   padding: 140px 0
+   &__flex 
+      gap: 20px
+   h1 
+      color: #000
+      margin-bottom: 70px
+   &__box 
+      width: 100%
+      background: white 
+      padding: 70px
+   h2 
+      margin-bottom: 50px
+      font-weight: 600
+      font-size: 24px
+      line-height: 26px
+      color: #000000
+   &__block 
+      margin-top: 60px
+      padding: 15px 50px 15px
+      background: black
+   &__area 
+      justify-content: flex-end
+      align-items: center
+      p 
+         font-weight: 800
+         font-size: 24px
+         line-height: 29px
+         color: #FFFFFF
+         span 
+            font-weight: 400
+            font-size: 16px
+      a 
+         width: 187px
+         height: 49px
+         margin-left: 40px
+.arcticmodal-overlay, .arcticmodal-container
+   background-color: #FFD41D !important
+   opacity: 1 !important
+.popup-call__box
+   transition: 0s
+   &.call 
+      padding: 0
+      background: transparent
+      width: 1200px
+      margin-left: -600px
+      top: -13rem
+      h2 
+         color: #000
+         span 
+            display: block
+            color: #000
+            opacity: 0.25
+      .order__form input
+         color: #000
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+         &:focus 
+            border-bottom: 1px solid rgba(0, 0, 0, 1) !important
+      input::-webkit-input-placeholder 
+         color: rgb(123,102,14) !important
+      input::-moz-placeholder
+         color: rgb(123,102,14) !important
+      input:-ms-input-placeholder 
+         color: rgb(123,102,14) !important
+      input:-moz-placeholder 
+         color: rgb(123,102,14) !important
+      .order__form button
+         &:hover 
+            background: black
+            color: white
+.popup 
+   &__row 
+      margin-top: 60px
+      align-items: flex-start
+      gap: 80px
+      position: relative
+      z-index: 3
+   &__item 
+      display: flex
+      align-items: center
+      span 
+         margin-right: 15px
+         font-size: 48px
+         font-weight: 700
+         color: #000000
+         line-height: 64px
+         letter-spacing: 0.38px
+      p 
+         font-size: 16px
+         font-weight: 400
+         color: #000000
+         line-height: 22px
+         letter-spacing: 0.13px
+   &__bg 
+      position: absolute
+      z-index: 0
+      opacity: 0.55
+      font-size: 328px
+      font-weight: 700
+      color: #facb00
+      bottom: -10%
+      right: 0
+input.error 
+   border-bottom: 1px solid red !important
+#popup-thank
+   .popup-call__box.call
+      h2 
+         margin-bottom: 20px
+      p 
+         font-size: 18px
+         line-height: 18px
+         margin-bottom: 50px
+      a 
+         &:hover 
+            background: black 
+            color: white
+ 
 
 
 
