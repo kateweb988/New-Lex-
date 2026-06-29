@@ -208,22 +208,67 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
-  const sliders = document.querySelectorAll('.custom-range');
 
-    function updateSlider(slider) {
+    const sliders = document.querySelectorAll('.custom-range');
+    const priceElement = document.querySelector('.calc__area p');
+
+    // Настройки ползунков
+    const settings = [
+        {
+            min: 0,
+            max: 40,
+            step: 1,
+            type: 'employees',
+            price: 3000
+        },
+        {
+            min: 0,
+            max: 40,
+            step: 1,
+            type: 'employees',
+            price: 6000
+        },
+        {
+            min: 0,
+            max: 20,
+            step: 1,
+            type: 'docs',
+            price: 25000
+        }
+    ];
+
+    // Настраиваем ползунки
+    sliders.forEach((slider, index) => {
+
+        slider.min = settings[index].min;
+        slider.max = settings[index].max;
+        slider.step = settings[index].step;
+
+        // Начальные значения
+        slider.value = settings[index].min;
+
+    });
+
+    function updateSlider(slider, index) {
+
         const value = slider.parentElement.querySelector('.slider-value');
 
         const min = Number(slider.min);
         const max = Number(slider.max);
+        const current = Number(slider.value);
 
-        const percent = ((slider.value - min) / (max - min)) * 100;
+        const percent = ((current - min) / (max - min)) * 100;
 
-        if (slider.dataset.type === 'percent') {
-            value.textContent = slider.value + '%';
+        // Текст над ползунком
+        if (settings[index].type === 'percent') {
+            value.textContent = current === max ? '40+%' : current + '%';
+        } else if (settings[index].type === 'employees') {
+            value.textContent = current === max ? '40+' : current;
         } else {
-            value.textContent = slider.value;
+            value.textContent = current === max ? '20+' : current;
         }
 
+        // Закрашиваем пройденную часть
         slider.style.background = `
             linear-gradient(
                 to right,
@@ -235,13 +280,37 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
     }
 
-    sliders.forEach(slider => {
-        updateSlider(slider);
+    function updatePrice() {
 
-        slider.addEventListener('input', () => {
-            updateSlider(slider);
+        let total = 0;
+
+        sliders.forEach((slider, index) => {
+
+            total += Number(slider.value) * settings[index].price;
+
         });
+
+        priceElement.innerHTML = `
+            Стоимость: ${total.toLocaleString('ru-RU')} <span>/Руб</span>
+        `;
+    }
+
+    sliders.forEach((slider, index) => {
+
+        updateSlider(slider, index);
+
+        slider.addEventListener('input', function () {
+
+            updateSlider(slider, index);
+            updatePrice();
+
+        });
+
     });
+
+    // Начальная стоимость
+    updatePrice();
+
 });
 document.addEventListener('DOMContentLoaded', function () {
   const swiper1 = new Swiper('.swiper1', {

@@ -638,6 +638,7 @@ label.error {
 }
 
 .switch {
+  min-width: 70.86px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -685,7 +686,7 @@ input:checked + .toggle::before {
 }
 
 input:checked ~ .text::after {
-  content: "EN";
+  content: "CH";
 }
 
 .nav {
