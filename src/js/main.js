@@ -394,43 +394,60 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 document.addEventListener('DOMContentLoaded', () => {
-	const tabs = document.querySelectorAll('.tabs__btns a');
-	const contents = document.querySelectorAll('.tabs__area');
 
-	tabs.forEach(tab => {
-		tab.addEventListener('click', e => {
-			e.preventDefault();
+	const tabsGroups = document.querySelectorAll('.tabs__btns');
 
-			const target = tab.dataset.tab;
+	tabsGroups.forEach((tabsGroup, index) => {
 
-			tabs.forEach(btn => btn.classList.remove('active'));
+		const tabs = tabsGroup.querySelectorAll('a');
 
-			contents.forEach(content => {
-				content.classList.remove('active', 'show');
+		// Ищем ближайший контейнер с табами по индексу
+		const contentGroup = document.querySelectorAll('.tabs__content')[index];
+
+		if (!contentGroup) return;
+
+		const contents = contentGroup.querySelectorAll('.tabs__area');
+
+		tabs.forEach(tab => {
+
+			tab.addEventListener('click', e => {
+				e.preventDefault();
+
+				const target = tab.dataset.tab;
+
+				tabs.forEach(btn => btn.classList.remove('active'));
+
+				contents.forEach(content => {
+					content.classList.remove('active', 'show');
+				});
+
+				tab.classList.add('active');
+
+				const activeContent = contentGroup.querySelector(
+					`[data-tab-content="${target}"]`
+				);
+
+				if (!activeContent) return;
+
+				activeContent.classList.add('active');
+
+				requestAnimationFrame(() => {
+					activeContent.classList.add('show');
+				});
 			});
 
-			tab.classList.add('active');
-
-			const activeContent = document.querySelector(
-				`[data-tab-content="${target}"]`
-			);
-
-			activeContent.classList.add('active');
-
-			requestAnimationFrame(() => {
-				activeContent.classList.add('show');
-			});
 		});
+
+		const firstTab = contentGroup.querySelector('.tabs__area.active');
+
+		if (firstTab) {
+			requestAnimationFrame(() => {
+				firstTab.classList.add('show');
+			});
+		}
+
 	});
 
-	// анимация первого таба при загрузке
-	const firstTab = document.querySelector('.tabs__area.active');
-
-	if (firstTab) {
-		requestAnimationFrame(() => {
-			firstTab.classList.add('show');
-		});
-	}
 });
 // Замена <img class="svg"> на inline SVG
 document.addEventListener("DOMContentLoaded", () => {
