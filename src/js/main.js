@@ -72,11 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 });
-document.querySelectorAll('.accordion-btn').forEach(btn => {
-	btn.addEventListener('click', function(e) {
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+	button.addEventListener('click', function (e) {
 		e.preventDefault();
+		e.stopPropagation();
 
-		this.closest('.has-submenu').classList.toggle('active');
+		const parent = this.closest('.has-submenu');
+		parent.classList.toggle('active');
+
+		this.textContent = parent.classList.contains('active') ? '−' : '+';
 	});
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -89,10 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    $('.a1').on('click', function (e) {
+    // Универсальное открытие модалок
+    $('[data-modal]').on('click', function (e) {
         e.preventDefault();
 
-        $('#popup-call').arcticmodal({
+        const modal = $(this).data('modal');
+
+        $(modal).arcticmodal({
             openEffect: {
                 type: 'none',
                 speed: 0
@@ -104,20 +111,68 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    $('.a2, .link').on('click', function (e) {
-        e.preventDefault();
+});
+document.addEventListener("DOMContentLoaded", function () {
 
-        $('#popup-call2').arcticmodal({
-            openEffect: {
-                type: 'none',
-                speed: 0
-            },
-            closeEffect: {
-                type: 'none',
-                speed: 0
-            }
-        });
-    });
+	const slider = document.querySelector(".info__slider");
+
+	if (!slider) return;
+
+
+	const pages = slider.querySelectorAll(".swiper-slide");
+
+
+	let swiper = null;
+
+
+	function initSwiper() {
+
+		if (window.innerWidth >= 992) {
+
+			if (!swiper) {
+
+				swiper = new Swiper(slider, {
+
+					slidesPerView: 1,
+
+					speed: 600,
+
+					spaceBetween: 20,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+
+					navigation: {
+						nextEl: document.querySelector(".info-next"),
+						prevEl: document.querySelector(".info-prev"),
+					},
+
+				});
+
+			}
+
+		} else {
+
+			if (swiper) {
+
+				swiper.destroy(true, true);
+				swiper = null;
+
+			}
+
+		}
+
+	}
+
+
+	initSwiper();
+
+
+	window.addEventListener("resize", function () {
+		initSwiper();
+	});
+
 
 });
 document.addEventListener("DOMContentLoaded", () => {

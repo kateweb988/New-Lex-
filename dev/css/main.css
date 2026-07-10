@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -383,42 +384,42 @@ html *::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Black.woff2") format("woff2"), url("/fonts/SFProDisplay-Black.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SFProDisplay-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Bold.woff2") format("woff2"), url("/fonts/SFProDisplay-Bold.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Light.woff2") format("woff2"), url("/fonts/SFProDisplay-Light.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Medium.woff2") format("woff2"), url("/fonts/SFProDisplay-Medium.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Regular.woff2") format("woff2"), url("/fonts/SFProDisplay-Regular.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("/fonts/SFProDisplay-Semibold.woff") format("woff");
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -587,7 +588,7 @@ label.error {
 }
 
 .custom-checkbox:checked + label::before {
-  background: url(/img/check2.png) no-repeat center center;
+  background: url(../img/check2.png) no-repeat center center;
   background-size: 8px;
 }
 
@@ -723,7 +724,7 @@ input:checked ~ .text::after {
 .nav .menu-btn {
   cursor: pointer;
   display: block;
-  background: url(/img/bur1.svg) no-repeat center center;
+  background: url(../img/bur1.svg) no-repeat center center;
   width: 48px;
   height: 48px;
   transition: 0.5s;
@@ -891,6 +892,7 @@ input:checked ~ .text::after {
   max-width: 475px;
 }
 .help__box {
+  position: relative;
   justify-content: space-between;
   gap: 18px;
 }
@@ -1325,7 +1327,7 @@ input:checked ~ .text::after {
   width: 24px;
   height: 24px;
   max-width: 24px;
-  background: url(/img/check.svg) no-repeat center center;
+  background: url(../img/check.svg) no-repeat center center;
   background-color: rgb(175, 147, 29);
   border-radius: 50%;
   border: none;
@@ -2262,10 +2264,10 @@ input:checked ~ .text::after {
   top: 33px;
   right: 30px;
   height: 28px;
-  background: url(/img/plus.svg) no-repeat !important;
+  background: url(../img/plus.svg) no-repeat !important;
 }
 .faq .accordeon__button.active:after, .faq .accordeon__button2.active:after {
-  background: url(/img/min.svg) no-repeat !important;
+  background: url(../img/min.svg) no-repeat !important;
 }
 .faq .panel__info {
   font-size: 14px;
@@ -3092,9 +3094,10 @@ input.error {
 
 .help2 .info__row {
   width: 66.3%;
+  flex-wrap: nowrap;
 }
 .help2 .info__row a {
-  width: 48.8%;
+  width: 100%;
   padding-top: 30px;
 }
 .help2 .info__row a h3 {
@@ -3242,6 +3245,8 @@ input.error {
   line-height: 28px;
   font-weight: 800;
   color: #000000;
+  width: 100%;
+  max-width: 662px;
 }
 .price__item h4 {
   margin-top: 0;
@@ -3296,7 +3301,7 @@ input.error {
   max-width: 930px;
 }
 .price__row {
-  gap: 36px;
+  gap: 50px;
 }
 .price__el small {
   display: block;
@@ -3316,10 +3321,127 @@ input.error {
   font-weight: 400;
   font-size: 14px;
 }
-.price__el:nth-child(2) p {
-  color: #FFD41D;
+
+.submenu-head {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
 }
 
+.accordion-link {
+  flex: 1;
+}
+
+.accordion-toggle {
+  padding: 5px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+  opacity: 0.4;
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.accordion-toggle:hover {
+  opacity: 1;
+}
+
+.help3 .help__row {
+  width: 100%;
+}
+.help3 .help__block {
+  width: 31.5%;
+}
+
+.info__slider {
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+}
+
+.info__row {
+  width: 100%;
+}
+
+.info__page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.info__page > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.info__slider .swiper-slide {
+  height: auto;
+}
+
+.info__page a {
+  background: #fff;
+}
+
+/* стрелки */
+.info-prev,
+.info-next {
+  position: absolute;
+  top: -112px;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+.info-prev .svg,
+.info-next .svg {
+  width: 100%;
+  height: 100%;
+}
+.info-prev:hover .svg path,
+.info-next:hover .svg path {
+  fill: #FFD41D;
+}
+.info-prev:hover .svg rect,
+.info-next:hover .svg rect {
+  stroke: #FFD41D;
+}
+
+.info-prev {
+  left: initial;
+  right: 60px;
+}
+
+.info-next {
+  right: 0px;
+}
+
+.info-prev.swiper-button-disabled,
+.info-next.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+/* если 4 карточки или меньше */
+.info__slider.no-slider .info-prev,
+.info__slider.no-slider .info-next {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .info__page {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 1199px) {
   .menu-btn, .menu {
     display: block;
@@ -3332,10 +3454,10 @@ input.error {
     top: -9px;
     z-index: 11;
     overflow: hidden;
-    background: url(/img/bur1.png) no-repeat center center;
+    background: url(../img/bur1.png) no-repeat center center;
   }
   .menu-btn.active {
-    background: url(/img/bur2.svg) no-repeat center center;
+    background: url(../img/bur2.svg) no-repeat center center;
   }
   .menu {
     position: fixed;
@@ -3701,8 +3823,17 @@ input.error {
   .price__wrap {
     margin-top: 40px;
   }
+  .help3 .help__block {
+    width: 48.5%;
+  }
+  .info__slider {
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
+  .help3 .help__block {
+    width: 100%;
+  }
   .news h1 {
     margin-bottom: 40px;
   }
@@ -3893,6 +4024,16 @@ input.error {
   }
   .price__row {
     flex-flow: column;
+  }
+  .info-prev, .info-next {
+    display: none;
+  }
+  .info__page {
+    display: flex;
+    flex-direction: column;
+  }
+  .help2 .info__row {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 767px) {
