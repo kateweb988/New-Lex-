@@ -39,51 +39,33 @@
 				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Main</a>
 		</li>
 		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="landing.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Landing</a>
+			<a href="catalog.html"
+				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">
+				Каталог
+			</a>
 		</li>
 		<li style="width: 30%; margin: 0 auto 40px;">
 			<a href="page.html"
 				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Внутренняя</a>
 		</li>
 		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="news.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Новости</a>
-		</li>
-		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="news-item.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Новость</a>
-		</li>
-		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="oferta.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">Оферта</a>
-		</li>
-		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="personal.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">
-				Соглашение
-			</a>
-		</li>
-		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="contacts.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">
-				Контакты
-			</a>
-		</li>
-		<li style="width: 30%; margin: 0 auto 40px;">
-			<a href="calc.html"
-				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">
-				Калькулятор
-			</a>
+			<a href="error.html"
+				style="font-weight: bold; color: black; font-size: 18px; display: block; text-align: center;">404</a>
 		</li>
 	</ul>
 	<div class="d-flex"
 		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
-		<a href="#" class="btn btn_1" data-modal="#popup-call" style="margin: 20px;" >
+		<!-- <a href="#" class="btn btn_1" data-modal="#popup-call" style="margin: 20px;" >
 			кнопка
 		</a>
-		<a href="#" class="btn btn_2" data-modal="#popup-call2" style="margin: 20px;">
+		<a href="#" class="btn btn_1" data-modal="#popup-call2" style="margin: 20px;">
 			Специалист
+		</a> -->
+		<a href="#" class="btn btn_1" data-modal="#popup-call3" style="margin: 20px;">
+			Есть иск
+		</a>
+		<a href="#" class="btn btn_1" data-modal="#popup-call4" style="margin: 20px;">
+			Обсудим задачу
 		</a>
 	</div>
 	</div>
@@ -199,6 +181,86 @@
 				<p class="popup__bg">
 					NewLex
 				</p>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call3">
+			<div class="popup-call__box call">
+				<div class="box-modal__close articmodal-close">
+					<img src="img/close2.svg" alt="">
+				</div>
+				<div class="form__box form q">
+					<div class="form__content">
+						<h2>
+							Есть иск, претензия или <span> риск </span>потери денег?
+						</h2>
+						<p>
+							Оставьте контакт и кратко опишите ситуацию. Юрист уточнит стадию, сумму риска и документы, необходимые для оценки
+						</p>
+					</div>
+					<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+						<input type="text" placeholder="Ваше имя" class="form__field" required="" name="name">
+						<input type="tel" placeholder="Номер телефона" class="form__field tel" required="" name="tel">
+						<textarea name="text" placeholder="Кратко опишите ситуацию"></textarea>
+						<div class="order__flex input-holder checkbox q">
+							<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+								id="form11" value="Я даю свое согласие на обработку персональных данных">
+							<label class="form-check-label " for="form11">
+								<span>
+									Нажимая кнопку «Обсудить задачу», я даю свое согласие на обработку моих персональных данных.
+								</span>
+							</label>
+						</div>
+						<button class="btn btn_2" data-submit>
+							Обсудить задачу
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call4">
+			<div class="popup-call__box">
+				<div class="box-modal__close articmodal-close">
+					<img src="img/close2.svg" alt="">
+				</div>
+				<div class="order__box order q">
+					<div class="order__side">
+						<img src="img/light.svg" alt="" class="order__light">
+						<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+							<input type="text" placeholder="Ваше имя" class="form__field" required="" name="name">
+							<input type="tel" placeholder="Номер телефона" class="form__field tel" required="" name="tel">
+							<textarea name="text" placeholder="Кратко опишите ситуацию"></textarea>
+							<div class="order__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="form1" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="form1">
+									<span>
+										Нажимая кнопку «Обсудить задачу», я даю свое согласие на обработку моих персональных данных.
+									</span>
+								</label>
+							</div>
+							<button class="btn" data-submit>
+								Передать задачу
+							</button>
+						</form>
+					</div>
+					<div class="order__side">
+						<h2>
+							Обсудим задачу <br>
+							и определим <br>
+							следующий шаг
+						</h2>
+						<p class="order__text">
+							Опишите ситуацию и оставьте контакт. Уточним задачу и документы, затем предложим формат работы
+						</p>
+						<p class="order__sub">
+							Честно оцениваем перспективы и риски. <br> Не обещаем гарантированный исход дела
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

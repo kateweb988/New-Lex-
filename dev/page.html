@@ -53,7 +53,7 @@
 					</li>
 					<li>
 						<a href="#">
-							Арюитражный  + <br>
+							Арбитражный  <br>
 							юрист
 						</a>
 					</li>
@@ -78,21 +78,35 @@
 							договоров
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							Регистраця  + <br>
-							бизнеса
-						</a>
+					<li class="has-submenu">
+						<div class="submenu-head">
+							<a href="#" class="accordion-link">
+								Регистрация <br>
+								бизнеса
+							</a>
+
+							<button type="button" class="accordion-toggle" aria-label="Открыть подменю">
+								+
+							</button>
+						</div>
+
+						<div class="submenu">
+							<a href="#">
+								Споры по строительству <br> и подряду
+							</a>
+
+							<a href="#">
+								Решение споров в <br> досудебном порядке
+							</a>
+
+							<a href="#">
+								Таможенные споры
+							</a>
+						</div>
 					</li>
 					<li>
 						<a href="#">
 							Споры по строительству <br> и подряду
-						</a>
-						<a href="#">
-							Решение споров в <br> досудебном порядке
-						</a>
-						<a href="#">
-							Таможенные споры
 						</a>
 					</li>
 					<li>
@@ -106,11 +120,11 @@
 							селлерам
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#">
 							Юрист коммерческой <br> нидвижимости
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -125,10 +139,10 @@
 							<div class="nav__info q">
 								<div class="nav__socials q">
 									<a href="#" target="_blank">
-										<img src="img/soc1.svg" alt="" class="svg">
+										<img src="img/soc2.svg" alt="" class="svg">
 									</a>
 									<a href="#" target="_blank">
-										<img src="img/soc2.svg" alt="" class="svg">
+										<img src="img/soc1.svg" alt="" class="svg">
 									</a>
 								</div>
 								<a href="tel:+74951283464" class="nav__tel">
@@ -141,22 +155,43 @@
 				<div class="container">
 					<div class="nav__box q">
 						<div class="nav__area q">
-							<div class="switch">
-								<input type="checkbox" id="lang">
-								<label for="lang" class="toggle"></label>
-								<span class="text"></span>
+							<div class="nav__lang">
+								<a href="#" class="active">
+									RU
+								</a>
+								<a href="#">
+									EN
+								</a>
+								<a href="#">
+									CN
+								</a>
 							</div>
 							<div class="menu-btn"></div>
 						</div>
 						<div class="nav__list q">
 							<li>
 								<a href="#">
-									Бухгалтерские услуги
+									Юридические услуги  для бизнеса
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									Юридические услуги
+									Арбитражные споры
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Практика
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Команда
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									СМИ
 								</a>
 							</li>
 							<li>
@@ -171,7 +206,7 @@
 							</li>
 							<li>
 								<a href="#">
-									Личный кабинет <img src="img/arrow.svg" alt="" class="svg">
+									Передать документы <img src="img/arrow.svg" alt="" class="svg">
 								</a>
 							</li>
 						</div>
@@ -179,766 +214,881 @@
 				</div>
 			</nav>
 		</header>
-		<main class="main page" id="main">
-			<img src="img/main.png" alt="" class="main__pic">
+		<main class="main catalog page" id="main">
+			<picture>
+				<source srcset="img/catalog.png" media="(max-width: 560px)">
+				<img src="img/catalog.png" alt="" class="main__pic">
+			</picture>
 			<div class="container">
 				<div class="main__box">
-					<a href="#" class="main__back">
-						<img src="img/arr.svg" alt="" class="svg">
-						Арбитражные споры для юридических лиц и ИП
-					</a>
-					<h1>
-						Представим интересы
-					</h1>
-					<div class="page__row q">
+					<div class="main__content">
+						<div class="bread">
+							<a href="#">
+								Главная
+							</a>
+							<a href="#">
+								Юридические услуги для бизнеса
+							</a>
+							<p>
+								Арбитражные споры
+							</p>
+						</div>
+						<h1>
+							Защищаем компанию <br>
+							в арбитражном споре <br>
+							от оценки позиции  <br>
+							до исполнения решения
+						</h1>
 						<p class="main__text">
-							Вашей компании в арбитражном суде
+							Работу на стороне истца и ответчика, оценку доказательств и <br> представительство в судебных инстанциях
 						</p>
-						<a href="#" class="main__btn btn btn_2">
-							Получить анализ перспектив
-						</a>
+						<div class="main__btns">
+							<a href="#" class="btn">
+								Передать материалы дела
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<section class="banner2" id="banner2">
+		<section class="what what-catalog" id="what-catalog">
 			<div class="container">
-				<div class="banner2__box">
-					<img src="img/banner2.png" alt="">
-					<div>
+				<h2>
+					Когда стоит <br>
+					обратиться в <span class="yel"> NewLex</span>
+				</h2>
+				<div class="what__row what__row_text q">
+					<div class="what__item">
+						<span>
+							01
+						</span>
+						<h3>
+							Предъявлен <br>
+							необоснованный иск
+						</h3>
+						<p>	
+							Контрагент подал иск в арбитражный суд. Существует риск наложения ареста на счета компании и списания средств в бесспорном порядке.
+						</p>
+					</div>
+					<div class="what__item">
+						<span>
+							02
+						</span>
+						<h3>
+							Грубое нарушение <br>
+							договора
+						</h3>
+						<p>	
+							Поставка бракованной продукции, срыв сроков строительства, отказ заказчика подписывать закрывающие акты или оплачивать товар.
+						</p>
+					</div>
+					<div class="what__item">
+						<span>
+							03
+						</span>
+						<h3>
+							Необходимость <br>
+							обжалования
+						</h3>
+						<p>	
+							Суд первой инстанции вынес несправедливое решение без учета доказательств. Требуется срочная подготовка апелляционной или кассационной жалобы.
+						</p>
+					</div>
+					<div class="what__item">
+						<span>
+							04
+						</span>
+						<h3>
+							Должник <br>
+							уклоняется от выплат
+						</h3>
+						<p>	
+							Решение суда вступило в силу, однако должник прячет активы, выводит деньги или игнорирует исполнительные листы.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="compose" id="compose">
+			<div class="container">
+				<h2>
+					Состав работ в рамках <br>
+					<span> арбитражного спора</span>
+				</h2>
+				<div class="compose__row">
+					<div class="compose__item">
+						<h3>
+							Досудебное <br>
+							урегулирование
+						</h3>
+						<p>
+							Составление мотивированной претензии, ведение переговоров с контрагентом, фиксация доказательств и подготовка к подаче иска.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+					<div class="compose__item">
+						<h3>
+							Анализ материалов <br>
+							и оценка рисков
+						</h3>
+						<p>
+							Аудит первичных документов, договоров и переписки. Оценка перспектив дела, судебной практики региона и платежеспособности стороны.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+					<div class="compose__item">
+						<h3>
+							Подготовка иска <br>
+							или отзыва
+						</h3>
+						<p>
+							Формирование правовой позиции, расчет суммы требований и неустойки, составление искового заявления или возражений (отзыва) на иск.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+					<div class="compose__item">
+						<h3>
+							Обеспечительные <br>
+							меры
+						</h3>
+						<p>
+							Подготовка ходатайств об аресте счетов, имущества или запрете совершения регистрационных действий до вынесения решения судом.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+					<div class="compose__item">
+						<h3>
+							Представительство <br>
+							в заседаниях
+						</h3>
+						<p>
+							частие юриста во всех судебных заседаниях первой, апелляционной и кассационной инстанций, заявление ходатайств и экспертиз.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+					<div class="compose__item">
+						<h3>
+							Исполнение <br>
+							решения суда
+						</h3>
+						<p>
+							Получение исполнительного листа, работа с банками должника и службой судебных приставов (ФССП) до фактического поступления денег на счет.
+						</p>
+						<span>
+							От 20 000 RUB
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cases cases-catalog" id="cases-catalog">
+			<div class="container">
+				<h2>
+					Судебная и <br> коммерческая <span> практика</span>
+				</h2>
+				<div class="tabs">
+					<div class="cases__top">
+						<div class="tabs__btns q">
+							<a href="#" class="active btn btn_2" data-tab="all">
+								Арбитраж
+							</a>
+							<a href="#" class="btn btn_2" data-tab="debt">
+								Взыскание
+							</a>
+							<a href="#" class="btn btn_2" data-tab="defense">
+								Корпоративные и договорные споры
+							</a>
+						</div>
+						<a href="#" class="btn cases__see">
+							Посмотреть дело
+						</a>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__area active"  data-tab-content="all">
+							<a href="#" class="tabs__item">
+								<span>
+									1. Ситуация
+								</span>
+								<h3>
+									Обращение в суд <br>
+									по разделу бизнеса
+								</h3>
+								<p class="tabs__text">
+									Сторона ответчика подала встречное обращение в региональный суд.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									2. Что делали
+								</span>
+								<h3>
+									Собрали и подготовили
+									контрдоказательства
+								</h3>
+								<p class="tabs__text">
+									Собрали документы, переписку провели 
+									ряд экспертиз.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									3. Результат
+								</span>
+								<h3>
+									Отклонение обращения
+									ответчика
+								</h3>
+								<p class="tabs__text">
+									Суд принял сторону истеца и отклонил
+									обращение ответчика.
+								</p>
+							</a>
+						</div>
+						<div class="tabs__area"  data-tab-content="debt">
+							<a href="#" class="tabs__item">
+								<span>
+									1. Ситуацияяяя
+								</span>
+								<h3>
+									Обращение в суд <br>
+									по разделу бизнеса
+								</h3>
+								<p class="tabs__text">
+									Сторона ответчика подала встречное обращение в региональный суд.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									2. Что делали
+								</span>
+								<h3>
+									Собрали и подготовили
+									контрдоказательства
+								</h3>
+								<p class="tabs__text">
+									Собрали документы, переписку провели 
+									ряд экспертиз.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									3. Результат
+								</span>
+								<h3>
+									Отклонение обращения
+									ответчика
+								</h3>
+								<p class="tabs__text">
+									Суд принял сторону истеца и отклонил
+									обращение ответчика.
+								</p>
+							</a>
+						</div>
+						<div class="tabs__area"  data-tab-content="defense">
+							<a href="#" class="tabs__item">
+								<span>
+									1. Ситуация
+								</span>
+								<h3>
+									Обращение в суд <br>
+									по разделу бизнеса
+								</h3>
+								<p class="tabs__text">
+									Сторона ответчика подала встречное обращение в региональный суд.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									2. Что делали
+								</span>
+								<h3>
+									Собрали и подготовили
+									контрдоказательства
+								</h3>
+								<p class="tabs__text">
+									Собрали документы, переписку провели 
+									ряд экспертиз.
+								</p>
+							</a>
+							<a href="#" class="tabs__item">
+								<span>
+									3. Результат
+								</span>
+								<h3>
+									Отклонение обращения
+									ответчика
+								</h3>
+								<p class="tabs__text">
+									Суд принял сторону истеца и отклонил
+									обращение ответчика.
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="cases__area">
+					<p class="cases__big">
+						NewLex
+					</p>
+					<div class="cases__head">
+						<div class="cases__item">
+							<p>
+								Отрасль клиента:
+							</p>
+							<span>
+								Коммерческий бизнес
+							</span>
+						</div>
+						<div class="cases__item">
+							<p>
+								Сторона в споре:
+							</p>
+							<span>
+								Истец
+							</span>
+						</div>
+						<div class="cases__item">
+							<p>
+								Сумма риска:
+							</p>
+							<span>
+								10,4 млн ₽
+							</span>
+						</div>
+					</div>
+					<div class="cases__el">
+						<h4>
+							Основные действия:
+						</h4>
+						<div class="cases__txt">
+							<p>
+								– Детальный анализ иска, договора и доказательств противоположной стороны
+							</p>
+							<p>
+								– Сбор и подготовка контрдоказательств (документы, переписка, экспертиза, свидетели)
+							</p>
+							<p>
+								– Составление и подача отзыва на иск, возражений и ходатайств
+							</p>
+							<p>
+								– Представление интересов клиента в судебных заседаниях, участие в прениях
+							</p>
+							<p>
+								– Ведение переговоров о возможном мировом соглашении
+							</p>
+						</div>
+					</div>
+					<div class="cases__el">
+						<h4>
+							Результат работы NewLex:
+						</h4>
+						<div class="cases__txt">
+							<p>
+								Иск к клиенту полностью (или в значительной части) отклонён. <span> Суд признал</span> позицию защиты обоснованной, взыскание с клиента не произведено / существенно снижено. <br> <span> Клиент сохранил активы</span> и деловую репутацию.
+							</p>
+						</div>
+					</div>
+					<a href="#" class="btn cases-catalog__btn">
+						Судебный акт
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="help help2" id="help2">
+			<div class="container">
+				<h2>
+					Формат <br>
+					<span>и стоимость работы</span> 
+				</h2>
+				<p class="help__sub">
+					Стоимость зависит от стадии задачи, объема материалов, суммы требований, числа участников и судебных инстанций. После просмотра документов согласовываем поэтапную или комплексную работу и фиксируем ее состав в договоре
+				</p>
+				<div class="help__box q">
+
+					<div class="info__slider swiper">
+
+						<div class="info__row swiper-wrapper">
+
+
+							<!-- СЛАЙД 1 -->
+							<div class="swiper-slide">
+
+								<div class="info__page">
+
+
+									<a href="#">
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Старт
+										</h3>
+
+										<p class="help2__text">
+											Подойдет владельцам бизнеса, которые только начинают путь к успеху. Либо тем кому юрист нужен пару раз в месяц.
+										</p>
+
+										<small>
+											5 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 15 000 <span>/Руб</span>
+										</p>
+									</a>
+
+
+
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Базовый
+										</h3>
+
+										<p class="help2__text">
+											Идеально для малого бизнеса, либо тем кому услуги юриста нужны не чаще, чем раз в неделю.
+										</p>
+
+										<small>
+											10 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 30 000 <span>/Руб</span>
+										</p>
+
+									</a>
+
+
+
+
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Расширеный
+										</h3>
+
+										<p class="help2__text">
+											Подходит тем, укого периодически возникает необходимость в юридическом оформлении юриста в штат.
+										</p>
+
+										<small>
+											20 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 50 000 <span>/Руб</span>
+										</p>
+
+									</a>
+
+
+
+
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Все включено
+										</h3>
+
+										<p class="help2__text">
+											Подойдёт тем, укого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы
+										</p>
+
+										<small>
+											40 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 70 000 <span>/Руб</span>
+										</p>
+
+									</a>
+
+
+								</div>
+
+							</div>
+
+
+
+
+							<!-- СЛАЙД 2 -->
+							<div class="swiper-slide">
+
+								<div class="info__page">
+
+
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Все включено
+										</h3>
+
+										<p class="help2__text">
+											Подойдёт тем, укого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы
+										</p>
+
+										<small>
+											40 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 70 000 <span>/Руб</span>
+										</p>
+
+									</a>
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Все включено
+										</h3>
+
+										<p class="help2__text">
+											Подойдёт тем, укого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы
+										</p>
+
+										<small>
+											40 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 70 000 <span>/Руб</span>
+										</p>
+
+									</a>
+									<a href="#">
+
+										<div class="info2__top q">
+											<p>
+												Оформить заявку
+											</p>
+											<img src="img/link.svg" alt="">
+										</div>
+
+										<h3>
+											Все включено
+										</h3>
+
+										<p class="help2__text">
+											Подойдёт тем, укого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы
+										</p>
+
+										<small>
+											40 часов работы юриста
+										</small>
+
+										<p class="help2__title">
+											Стоимость: 70 000 <span>/Руб</span>
+										</p>
+
+									</a>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="help__area">
+
+						<small>
+							NewLex
+						</small>
+
+						<img src="img/bg.png" alt="">
+
+						<h4>
+							Персональный
+						</h4>
+
+						<p>
+							Данный тариф подойдёт тем, кому
+							необходимо проектное сопровождение,
+							либо тем, кто хочет выбрать тариф на индивидуальных условиях.
+						</p>
+
+						<a href="#" class="btn">
+							Оформить заявку
+						</a>
+
+						<p class="help2__pay">
+							Стоимость: от 100 000 <span>/Руб</span>
+						</p>
+
+					</div>
+
+
+				</div>
+				<a href="#" class="help__link btn">
+					Передать документы для расчета
+				</a>
+			</div>
+		</section>
+		<section class="start start-page" id="start">
+			<div class="container">
+				<h2>
+					Этапы работы в рамках <br>
+					<span>арбитражного спора</span> 
+				</h2>
+				<div class="start__row">
+					<div class="start__item">
+						<span>
+							1. Этап
+						</span>
+						<p>
+							Постановка <br>
+							задачи и передача <br>
+							документации
+						</p>
+					</div>
+					<div class="start__item">
+						<span>
+							2. Этап
+						</span>
+						<p>
+							Оценка 	<br>
+							позиции и рисков
+						</p>
+					</div>
+					<div class="start__item">
+						<span>
+							3. Этап
+						</span>
+						<p>
+							Согласование <br>
+							стратегии, работ <br>
+							и бюджета
+						</p>
+					</div>
+					<div class="start__item">
+						<span>
+							4. Этап
+						</span>
+						<p>
+							Ведение дела <br>
+							под ключ
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="law law-catalog" id="law-catalog">
+			<div class="container">
+				<div class="law__top">
+					<h2>
+						За дело отвечает <br>
+						конкретный <span> юрист</span>
+					</h2>
+					<a href="#" class="btn">
+						Посмотреть опыт и практику
+					</a>
+				</div>
+				<div class="law__box">
+					<div class="law__item">
+						<img src="img/law1.png" alt="">
+						<span>
+							15 лет стажа
+						</span>
+						<h3>
+							Гравиров Николай
+						</h3>
+						<p>
+							Управляющий партнер
+						</p>
+					</div>
+					<div class="law__item">
+						<img src="img/law2.png" alt="">
+						<span>
+							8 лет стажа
+						</span>
+						<h3>
+							Богданов Владимир
+						</h3>
+						<p>
+							Директор отдела продаж и маркетинга
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<div class="rev__top q">
+					<h2>
+						Что говорят <br>
+						клиенты <span> о нас</span>
+					</h2>
+					<a href="#" class="rev__yandex">
+						<div class="rev__area">
+							Я
+						</div>
+						<div class="rev__per">
+							<p class="rev__new">
+								NewLex
+							</p>
+							<div class="q">
+								<span>
+									58 отзывов
+								</span>
+								<span>
+									64 оценки
+								</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								Смотреть на яндекс
+							</a>
+							<p>
+								Работаю в закупках и постоянно приходится иметь дело с договорами, поставщиками, актами. Часто сталкивались с нестыковками, особенно при задержках сроков. Через руководство начали сотрудничество с New Lex и я вздохнул спокойно.
+							</p>
+							<h3>
+								Виктор Любирец <span>5.0</span>
+							</h3>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								Смотреть на яндекс
+							</a>
+							<p>
+								Благодарю компанию NewLex за их работу и отличный сервис. Сначала они помогали оформить мне ООО,потом и разовые бухгатерские услуги у них заказывал. За все время сотрудничества с NewLex ,они зарекомендовали себя ,как профессионалы своего дела. Кроме того,что прекрасно выполняют свою работу ,да еще и просто вежливые ,порядочные люди ,не стараются раскрутить никого на деньги. Решил ,что буду оформлять их бухгалтерское сопровождение своего бизнеса на постоянной основе ,да еще и цены у них разумные .
+							</p>
+							<h3>
+								Валера Мартынов <span>5.0</span>
+							</h3>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								Смотреть на яндекс
+							</a>
+							<p>
+								Качественно предоставляют услуги. Отношение к клиентам адекватное, юрист был внимателен ко мне. Звать Дмитрий
+							</p>
+							<h3>
+								Людмила Коновалова <span>5.0</span>
+							</h3>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								Смотреть на яндекс
+							</a>
+							<p>
+								Работаю в закупках и постоянно приходится иметь дело с договорами, поставщиками, актами. Часто сталкивались с нестыковками, особенно при задержках сроков. Через руководство начали сотрудничество с New Lex и я вздохнул спокойно.
+							</p>
+							<h3>
+								Виктор Любирец <span>5.0</span>
+							</h3>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination1 pag"></div>
+			</div>
+		</section>
+		<section class="form" id="form">
+			<div class="container">
+				<div class="form__box q">
+					<div class="form__content">
 						<h2>
-							Есть похожий спор?
+							Есть иск, претензия или <span> риск </span>потери денег?
 						</h2>
 						<p>
-							Разберём документы, оценим перспективы и предложим стратегию защиты или взыскания.
+							Оставьте контакт и кратко опишите ситуацию. Юрист уточнит стадию, сумму риска и документы, необходимые для оценки
 						</p>
 					</div>
-					<a href="#" class="btn">
-						Обсудить дело <img src="img/arr3.svg" alt="" class="svg">
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="info info-page" id="info">
-			<div class="container">
-				<div class="info__top q">
-					<h2>
-						Работаем с 
-						арбитражными  <br>
-						спорами
-					</h2>
-					<p>
-						Клиент получает не абстрактную консультацию, а понятную <span class="yel"> юридическую работу:</span> анализ, позицию, документы, участие в заседаниях и сопровождение после решения.
-					</p>
-				</div>
-				<div class="info__row q">
-					<a href="#">
-						<p>
-							Анализ <br>
-							перспектив дела
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Очная консультация <br>
-							в офисе
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка <br>
-							претензии
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка отзыва на исковое заявление
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Консультация <br>
-							по телефону
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка искового заявления
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка ходатайств и иных заявлений
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка <br>
-							апелляционной жалобы
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Представительство в судебном заседании
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка <br>
-							кассационной жалобы
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Комплексное <br>
-							сопровождение дела
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-					<a href="#">
-						<p>
-							Подготовка отзыва <br>
-							на жалобу
-						</p>
-						<div class="info-page__row q">
-							<span>
-								От 20 000 RUB
-							</span>
-							<img src="img/link4.svg" alt="">
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="how" id="how">
-			<div class="container">
-				<div class="info__top q">
-					<h2>
-						Как работает <br>
-						NewLex
-					</h2>
-					<p>
-						Компания <span class="yel"> NEWLEX</span> предоставляет юридическую помощь в экономических спорах как с другими предпринимателями, так и с государством с нами решение конфликта = меньше затрат = лучший результат.
-					</p>
-				</div>
-				<div class="how__wrap q">
-					<div class="how__block">
-						<img src="img/how.png" alt="">
-						<h3>
-							Гарантия <span> результата</span>
-						</h3>
-						<p class="how__sub">
-							Поскольку не беремся за дела однозначно <br> проигрышные
-						</p>
-						<a href="#" class="btn">
-							Подписаться на сервис
-						</a>
-					</div>
-					<div class="how__box">
-						<div class="how__top">
-							<div class="how__flex q">
-								<div class="how__left">
-									<a href="#" class="how__link q">
-										<img src="img/link2.svg" alt="" class="svg">
-										Смотреть партнеров
-									</a>
-									<h3>
-										Работаем по <br> крупному
-									</h3>
-									<p>
-										Помогаем крупным компаниям решать юридические вопросы максимально деликатно и грамотно.
-									</p>
-								</div>
-								<div class="how__right">
-									<div class="how__logo">
-										<img src="img/firm11.png" alt="">
-									</div>
-									<div class="how__logo">
-										<img src="img/firm12.png" alt="">
-									</div>
-									<div class="how__logo">
-										<img src="img/firm13.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="how__area q">
-							<div class="how__item">
-								<h3>
-									Полная ясность
-								</h3>
-								<p>
-									У вас будет четкое представление о проблемах, рисках, перспективах и тактике с нашей стороны.
-								</p>
-								<small>
-									У юриста есть только одна форма капитала <br> - его репутация.
-								</small>
-							</div>
-							<div class="how__item">
-								<h3>
-									Наша стратегия <br>
-									ваша победа
-								</h3>
-								<p>
-									Выбор позиции, определение перспектив <br> и составление плана действий
-								</p>
+					<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+						<input type="text" placeholder="Ваше имя" class="form__field" required="" name="name">
+						<input type="tel" placeholder="Номер телефона" class="form__field tel" required="" name="tel">
+						<textarea name="text" placeholder="Кратко опишите ситуацию"></textarea>
+						<div class="order__flex input-holder checkbox q">
+							<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+								id="form11" value="Я даю свое согласие на обработку персональных данных">
+							<label class="form-check-label " for="form11">
 								<span>
-									700+
+									Нажимая кнопку «Обсудить задачу», я даю свое согласие на обработку моих персональных данных.
 								</span>
-								<small>
-									Дел выйграли без судебного <br> заседания
-								</small>
-							</div>
+							</label>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="help help-page" id="help">
-			<div class="container">
-				<div class="info__top q">
-					<h2>
-						Помогаем, если <br>
-						спор уже начался
-					</h2>
-					<p>
-						<span class="yel"> NewLex</span> подключается к арбитражным спорам на разных стадиях: до подачи иска, после получения требований, перед заседанием или при необходимости обжаловать решение.
-					</p>
-				</div>
-				<div class="help__box q">
-					<div class="help__row q">
-						<div class="help__block">
-							<span>
-								1
-							</span>
-							<h3>
-								На компанию <br>
-								подали иск
-							</h3>
-							<p>
-								Разберём требования, подготовим отзыв, доказательства и линию защиты.
-							</p>
-						</div>
-						<div class="help__block">
-							<span>
-								2
-							</span>
-							<h3>
-								Нужно подать иск <br>
-								к контрагенту
-							</h3>
-							<p>
-								Оценим документы, рассчитаем требования <br> и подготовим позицию для суда.
-							</p>
-						</div>
-						<div class="help__block">
-							<span>
-								3
-							</span>
-							<h3>
-								Контрагент нарушил договор
-							</h3>
-							<p>
-								Работаем со спорами по поставке, подряду, аренде, услугам и другим коммерческим договорам.
-							</p>
-						</div>
-						<div class="help__block">
-							<span>
-								4
-							</span>
-							<h3>
-								Нужно обжаловать решение
-							</h3>
-							<p>
-								Оценим основания для апелляции или <br> кассации и подготовим жалобу.
-							</p>
-						</div>
-						<div class="help__block">
-							<span>
-								5
-							</span>
-							<h3>
-								Контрагент нарушил договор
-							</h3>
-							<p>
-								Работаем со спорами по поставке, подряду, аренде, услугам и другим коммерческим договорам.
-							</p>
-						</div>
-						<div class="help__block">
-							<span>
-								6
-							</span>
-							<h3>
-								Нужно обжаловать решение
-							</h3>
-							<p>
-								Оценим основания для апелляции или <br> кассации и подготовим жалобу.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="cases cases-page" id="cases">
-			<div class="container">
-				<h2>
-					Примеры дел в <br> арбитражных спорах
-				</h2>
-				<div class="tabs">
-					<div class="tabs__btns q">
-						<a href="#" class="active btn btn_2" data-tab="all">
-							Все дела
-						</a>
-						<a href="#" class="btn btn_2" data-tab="debt">
-							Взыскание задолженности
-						</a>
-						<a href="#" class="btn btn_2" data-tab="defense">
-							Защита от иска
-						</a>
-						<a href="#" class="btn btn_2" data-tab="appeal">
-							Обжалование
-						</a>
-					</div>
-					<div class="tabs__content">
-						<div class="tabs__area active"  data-tab-content="all">
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Взыскали задолженность по договору поставки
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Защитили компанию от необоснованного взыскания
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Истец требовал оплату по спорному договору. Проанализировали документы, подготовили отзыв и доказали слабые места позиции оппонента.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Добились пересмотра решения
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									После неблагоприятного решения первой инстанции изучили материалы дела, нашли процессуальные и правовые основания для обжалования.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="debt">
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Защитили компанию от необоснованного взыскания
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Истец требовал оплату по спорному договору. Проанализировали документы, подготовили отзыв и доказали слабые места позиции оппонента.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Добились пересмотра решения
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									После неблагоприятного решения первой инстанции изучили материалы дела, нашли процессуальные и правовые основания для обжалования.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="defense">
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Взыскали задолженность по договору поставки
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Взыскали задолженность по договору поставки
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Взыскали задолженность по договору поставки
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Защитили компанию от необоснованного взыскания
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Истец требовал оплату по спорному договору. Проанализировали документы, подготовили отзыв и доказали слабые места позиции оппонента.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Добились пересмотра решения
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									После неблагоприятного решения первой инстанции изучили материалы дела, нашли процессуальные и правовые основания для обжалования.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="appeal">
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Взыскали задолженность по договору поставки
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Защитили компанию от необоснованного взыскания
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									Истец требовал оплату по спорному договору. Проанализировали документы, подготовили отзыв и доказали слабые места позиции оппонента.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<img src="img/case.png" alt="" class="tabs__pic">
-								<h3>
-									Добились пересмотра решения
-								</h3>
-								<p class="tabs__sub">
-									Обсудить дело <img src="img/ar-yel.svg" alt="">
-								</p>
-								<p class="tabs__text">
-									После неблагоприятного решения первой инстанции изучили материалы дела, нашли процессуальные и правовые основания для обжалования.
-								</p>
-								<p class="tabs__sum">
-									Взыскано 10,4 млн ₽
-								</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="cases cases2 cases-page" id="cases2">
-			<div class="container">
-				<h2>
-					Почему вам стоит <br>
-					обратиться именно к нам?
-				</h2>
-				<div class="tabs">
-					<div class="tabs__btns q">
-						<a href="#" class="active btn btn_2" data-tab="all">
-							Все дела
-						</a>
-						<a href="#" class="btn btn_2" data-tab="debt">
-							Взыскание задолженности
-						</a>
-						<a href="#" class="btn btn_2" data-tab="defense">
-							Защита от иска
-						</a>
-						<a href="#" class="btn btn_2" data-tab="appeal">
-							Обжалование
-						</a>
-					</div>
-					<div class="tabs__content">
-						<div class="tabs__area active"  data-tab-content="all">
-							<a href="#" class="tabs__item">
-								<h3>
-									Работа с NEW LEX
-								</h3>
-								<p class="tabs__text">
-									При работе с нами вы сохраняете свое <br> время, а также экономите деньги
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<h3>
-									С штатным бухгалтером или фриланс специалистом
-								</h3>
-								<p class="tabs__text">
-									Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="debt">
-							<a href="#" class="tabs__item">
-								<h3>
-									Работа с NEW LEX
-								</h3>
-								<p class="tabs__text">
-									При работе с нами вы сохраняете свое время, а также экономите деньги
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<h3>
-									С штатным бухгалтером или фриланс специалистом
-								</h3>
-								<p class="tabs__text">
-									Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<h3>
-									С штатным бухгалтером или фриланс специалистом
-								</h3>
-								<p class="tabs__text">
-									Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="defense">
-							<a href="#" class="tabs__item">
-								<h3>
-									Работа с NEW LEX
-								</h3>
-								<p class="tabs__text">
-									При работе с нами вы сохраняете свое время, а также экономите деньги
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<h3>
-									С штатным бухгалтером или фриланс специалистом
-								</h3>
-								<p class="tabs__text">
-									Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-							<a href="#" class="tabs__item">
-								<h3>
-									С штатным бухгалтером или фриланс специалистом
-								</h3>
-								<p class="tabs__text">
-									Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-						</div>
-						<div class="tabs__area"  data-tab-content="appeal">
-							<a href="#" class="tabs__item">
-								<h3>
-									Работа с NEW LEX
-								</h3>
-								<p class="tabs__text">
-									При работе с нами вы сохраняете свое время, а также экономите деньги
-								</p>
-								<p class="tabs__bg">NewLex</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="team team-page" id="team">
-			<div class="container">
-				<h2>
-					Делом занимаются специалисты NewLex по судебной работе
-				</h2>
-				<div class="team__row">
-					<div class="team__item">
-						<img src="img/team1.png" alt="">
-						<div class="team__info">
-							<p>
-								15+ лет
-							</p>
-							<span>
-								Стаж работы в юриспруденции
-							</span>
-						</div>
-						<div class="team__content">
-							<p class="team__name">
-								Гравиров Николай
-							</p>
-							<p class="team__job">
-								Управляющий партнер
-							</p>
-						</div>
-					</div>
-					<div class="team__item">
-						<img src="img/team4.png" alt="">
-						<div class="team__content">
-							<p class="team__name">
-								Богданов Владимир
-							</p>
-							<p class="team__job">
-								Директор отдела продаж и маркетинга
-							</p>
-						</div>
-					</div>
+						<button class="btn btn_2" data-submit>
+							Обсудить задачу
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>
 		<section class="faq" id="faq">
 			<div class="container">
 				<h2>
-					Ответы на частые <br> вопросы
+					Seo <span> текст</span>
 				</h2>
+				<div class="faq__text">
+					<p>
+						Юридическая компания NEW LEX специализируется на защите интересов юридических лиц и индивидуальных предпринимателей в сложных коммерческих конфликтах. Мы подключаемся к задачам бизнеса на любой стадии — от первичного правового аудита и досудебного урегулирования до ведения дел во всех инстанциях арбитражных судов и фактического исполнения судебных решений.
+					</p>
+					<p>
+						Наша ключевая практика охватывает взыскание дебиторской задолженности, споры по договорам строительного подряда и поставки, корпоративные конфликты участников, а также оспаривание сделок и защиту активов. До начала работы юристы детально анализируют доказательную базу, оценивают финансовые риски и формируют прозрачную процессуальную стратегию с фиксированным бюджетом.
+					</p>
+				</div>
 				<div class="accordeon">
 					<div class="accordeon-container">
 						<li class="accordeon__item">
-							<div class="accordeon__button closed">С какими арбитражными спорами вы работаете?</div>
+							<div class="accordeon__button closed">Сколько времени занимает первичная оценка документов?</div>
 							<ul class="accordeon__panel">
 								<li class="panel__text">
 									<p class="panel__info">
-										Контрагент получил товар, но не оплатил поставку в срок. Подготовили претензию, иск и представили интересы клиента в арбитражном суде.
+										Первичный анализ пакета документов (договор, акты, претензия, иск) выполняется в течение 24 часов с момента передачи. По итогам юрист предоставляет разбор перспектив, рисков и план процессуальных действий. 
 									</p>
 								</li>
 							</ul>
@@ -987,244 +1137,67 @@
 				</div>
 			</div>
 		</section>
-		<section class="copy" id="copy">
+		<section class="info" id="info">
 			<div class="container">
 				<h2>
-					Профессиональные юридические услуги - максимальная выгода
+					Смежные <br>
+					<span> услуги</span>
 				</h2>
-				<p class="copy__text">
-					Каждый из нас уверен, что ничего плохо с ним произойти не может. Меж тем, юридические услуги в Москве и Московский области могут потребоваться любому человеку вне зависимости от его пола, возраста, социального статуса и сферы занятости.Для этого не обязательно должно произойти что-то плохое. Услуги профессионального адвоката – очень обширное понятие, включающее в себя все аспекты права. Важно ответить, что любой гражданин имеет право на защиту своих интересов - материальных или нематериальных. Он может делать это самостоятельно, а может прибегнуть к помощи юриста.Юридические услуги для физических лиц, как правило, включают в себя, комплексное юридическое сопровождение дела в какой-либо отрасли права: семейной, жилищной, земельной и т.д.
-				</p>
-				<div class="copy__row q">
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-							<li>
-								Представительство в зале суда, где адвокат или юрист, представляет интересы доверителя в его присутствии или отсутствии
-							</li>
-							<li>
-								Обжалование судебного решения. Если результат судебного заседания по спору не удовлетворяет клиента, специалист в юридической сфере может полностью или частично его обжаловать или помочь составить апелляционную жалобу или кассационную жалобу, если вы решили делать это самостоятельно
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-							<li>
-								Представительство в зале суда, где адвокат или юрист, представляет интересы доверителя в его присутствии или отсутствии
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-							<li>
-								Представительство в зале суда, где адвокат или юрист, представляет интересы доверителя в его присутствии или отсутствии
-							</li>
-							<li>
-								Обжалование судебного решения. Если результат судебного заседания по спору не удовлетворяет клиента, специалист в юридической сфере может полностью или частично его обжаловать или помочь составить апелляционную жалобу или кассационную жалобу, если вы решили делать это самостоятельно
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="copy copy2" id="copy2">
-			<div class="container">
-				<h2>
-					Профессиональные юридические услуги - максимальная выгода
-				</h2>
-				<p class="copy__text">
-					Каждый из нас уверен, что ничего плохо с ним произойти не может. Меж тем, юридические услуги в Москве и Московский области могут потребоваться любому человеку вне зависимости от его пола, возраста, социального статуса и сферы занятости.Для этого не обязательно должно произойти что-то плохое. Услуги профессионального адвоката – очень обширное понятие, включающее в себя все аспекты права. Важно ответить, что любой гражданин имеет право на защиту своих интересов - материальных или нематериальных. Он может делать это самостоятельно, а может прибегнуть к помощи юриста.Юридические услуги для физических лиц, как правило, включают в себя, комплексное юридическое сопровождение дела в какой-либо отрасли права: семейной, жилищной, земельной и т.д.
-				</p>
-				<div class="copy__row q">
-					<div class="copy__item">
-						<h3>
-							Услуги адвоката – это, как правило:
-						</h3>
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-							<li>
-								Представительство в зале суда, где адвокат или юрист, представляет интересы доверителя в его присутствии или отсутствии
-							</li>
-							<li>
-								Обжалование судебного решения. Если результат судебного заседания по спору не удовлетворяет клиента, специалист в юридической сфере может полностью или частично его обжаловать или помочь составить апелляционную жалобу или кассационную жалобу, если вы решили делать это самостоятельно
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<ul>
-							<li>
-								Юридическая консультация, в ходе которой адвокат анализирует ситуацию, сложившуюся у клиента, изучает документы, которые есть у него на руках, предлагает варианты решения проблемы
-							</li>
-							<li>
-								Подготовка документации. Ведение дел с судом, как и с любой государственной конторой, требует огромного количества различного рода документов, которые должны быть составлены по установленному образцу и поданы точно в срок
-							</li>
-							<li>
-								Досудебная стадия решения конфликта. В некоторых случаях вопрос можно урегулировать без судебного процесса, в этом случае юрист выступает как медиатор
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="copy copy3" id="copy3">
-			<div class="container">
-				<h2>
-					Профессиональные юридические услуги - максимальная выгода
-				</h2>
-				<p class="copy__text">
-					Абонентское юридическое сопровождение бизнеса в Москве – это услуга, помогающая вести бизнес в соответствии с требованиями, установленными законодательством.
-				</p>
-				<p class="copy__text">
-					Юридическое сопровождение организации помогает избежать нарушения нормативно-правовых актов, защищает бизнес от потерь и банкротства. Оно может оказываться, как одним юристом, так и целой их группой, где каждый работает в определенной правовой сфере.
-				</p>
-				<p class="copy__text">
-					Оказание юридического сопровождения предпринимательской деятельности необходимо компаниям, предприятиям, фирмам, ООО, ИП. Особенно в нем нуждается малый бизнес, буквально задушенный налогами и бюрократией, но нередко консультацию заказывают и средние предприятия и даже промышленные гиганты, чтобы высвободить штатных юристов фирмы для других дел.
-				</p>
-				<p class="copy__text">
-					Комплексное юридическое обслуживание бизнеса в Москве и Московской области - специализация компании “NewLex”. Первая консультация проводится бесплатно. Любая компания, независимо от своих размеров, в ходе ведения дел вынуждена взаимодействовать не только с компаниями-поставщиками товаров и партнерами по бизнесу, но и с государственными органами, в том числе с проверяющими, такими как налоговая инспекция.
-				</p>
-				<div class="copy__row q">
-					<div class="copy__item">
-						<h3>
-							Ведение бухгалтерского учета это
-						</h3>
-						<ul>
-							<li>
-								Берем на себя решение проблем финансового департамента
-							</li>
-							<li>
-								Ведем учет с адаптацией к требованиям постоянно меняющегося законодательства Российской Федерации
-							</li>
-							<li>
-								Грамотно представляем вас перед контролирующими органами
-							</li>
-							<li>
-								Сопровождаем клиента без перерывов на отпуск/больничный
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							Полный спектр обслуживания - от А до Я
-						</h3>
-						<ul>
-							<li>
-								Будем вести бухучет вашей фирмы
-							</li>
-							<li>
-								Не допустим ошибок и штрафов
-							</li>
-							<li>
-								Предоставляем полную отчетность
-							</li>
-							<li>
-								Оптимизируем налогообложение
-							</li>
-							<li>
-								Проконсультируем по любому вопросу
-							</li>
-						</ul>
-					</div>
-					<div class="copy__item">
-						<h3>
-							С нами выгоднее
-						</h3>
-						<ul>
-							<li>
-								Восстановим учет
-							</li>
-							<li>
-								Без проблем возместим НДС
-							</li>
-							<li>
-								Зарегистрируем ООО и ИП
-							</li>
-							<li>
-								Сдадим за вас нулевую отчетность аккуратно и в срок
-							</li>
-							<li>
-								Настроим управленческий учет
-							</li>
-							<li>
-								Вернем долги от контрагентов
-							</li>
-							<li>
-								Будем вести кадровый, налоговый учет и многое другое
-							</li>
-						</ul>
-					</div>
+				<div class="info__row q">
+					<a href="#">
+						<p>
+							Арбитражные <br>
+							споры
+						</p>
+						<span>
+							Истец и ответчик, иск и отзыв, обжалование, исполнение решения.
+						</span>
+					</a>
+					<a href="#">
+						<p>
+							Взыскание <br>
+							задолженности
+						</p>
+						<span>
+							Долг, состояние должника, обеспечительные меры, получение денег.
+						</span>
+					</a>
+					<a href="#">
+						<p>
+							Досудебное <br>
+							урегулирование
+						</p>
+						<span>
+							Претензия, переговоры, медиация, закрепление договоренностей.
+						</span>
+					</a>
+					<a href="#">
+						<p>
+							Экспертиза <br>
+							договоров
+						</p>
+						<span>
+							Оплата и приемка, ответственность, расторжение, правки и переговоры.
+						</span>
+					</a>
+					<a href="#">
+						<p>
+							Корпоративные <br>
+							споры
+						</p>
+						<span>
+							Доли, управление и документы, спорные сделки, защита активов.
+						</span>
+					</a>
+					<a href="#">
+						<p>
+							Строительный <br>
+							подряд
+						</p>
+						<span>
+							Оплата, объем и качество работ, сроки, КС-2/КС-3 и экспертиза.
+						</span>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -1236,56 +1209,32 @@
 						<form action="success.php" class="order__form js-form" id="popupResult" method="post">
 							<input type="text" placeholder="Ваше имя" class="form__field" required="" name="name">
 							<input type="tel" placeholder="Номер телефона" class="form__field tel" required="" name="tel">
-							<button class="btn" data-submit>
-								Оставить заявку
-							</button>
+							<textarea name="text" placeholder="Кратко опишите ситуацию"></textarea>
 							<div class="order__flex input-holder checkbox q">
 								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
-									id="form1" value="Я даю свое согласие на обработку персональных данных" checked>
+									id="form1" value="Я даю свое согласие на обработку персональных данных">
 								<label class="form-check-label " for="form1">
 									<span>
-										Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных.
+										Нажимая кнопку «Обсудить задачу», я даю свое согласие на обработку моих персональных данных.
 									</span>
 								</label>
 							</div>
+							<button class="btn" data-submit>
+								Передать задачу
+							</button>
 						</form>
 					</div>
 					<div class="order__side">
 						<h2>
-							Пара кликов <br>
-							и мы поможем
+							Обсудим задачу <br>
+							и определим <br>
+							следующий шаг
 						</h2>
 						<p class="order__text">
-							За результат отвечаем.
+							Опишите ситуацию и оставьте контакт. Уточним задачу и документы, затем предложим формат работы
 						</p>
-						<div class="order__row q">
-							<div class="order__item">
-								<img src="img/firm1.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm2.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm3.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm4.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm5.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm6.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm7.png" alt="">
-							</div>
-							<div class="order__item">
-								<img src="img/firm8.png" alt="">
-							</div>
-						</div>
 						<p class="order__sub">
-							Этим компаниям уже помогли
+							Честно оцениваем перспективы и риски. <br> Не обещаем гарантированный исход дела
 						</p>
 					</div>
 				</div>
@@ -1332,17 +1281,18 @@
 							</li>
 							<li>
 								<a href="#">
-									Контакты
+									Блог
 								</a>
 							</li>
 						</ul>
 						<div class="footer__com q">
 							<p>
-								Разработчик
+								Разработчик <br>
+								сайта
 							</p>
 							<a href="https://gasfort.ru/" target="_blank">
 								<img src="img/com.svg" alt="">
-								<img src="img/company2.svg" alt="">
+								<img src="img/company.svg" alt="">
 							</a>
 						</div>
 					</div>
@@ -1394,6 +1344,13 @@
 							</a>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="footer__down">
+				<div class="container">
+					<p>
+						NEW LEX — юридическая компания для бизнеса
+					</p>
 				</div>
 			</div>
 		</footer>

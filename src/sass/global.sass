@@ -34,10 +34,11 @@ a
 footer
    margin-top: auto
 h1
-   font-size: 62px
+   font-size: 64px
    font-weight: 800
    color: #ffffff
-   line-height: 74px
+   line-height: 120%
+   letter-spacing: -1.5px
    margin: 0
 h2 
    font-size: 62px
@@ -45,6 +46,8 @@ h2
    font-weight: 800
    color: #000000
    margin: 0
+   span 
+      color: #CCCCCC
 ul 
    margin: 0
    padding: 0
@@ -90,7 +93,7 @@ div
 html * 
    scrollbar-width: thin
    scrollbar-color: blue $yel
-.popup__bg, .arcticmodal-overlay, .arcticmodal-container, .menu 
+.popup__bg, .arcticmodal-overlay, .arcticmodal-container, .menu, .cases .tabs__btns
    scrollbar-width: thin
    scrollbar-color: transparent transparent
 *::-webkit-scrollbar,
@@ -115,13 +118,13 @@ html *::-webkit-scrollbar-thumb
    height: 59px
    background: $yel
    border-radius: 60px
-   font-size: 17px
+   font-size: 18px
    font-weight: 800
    color: #000000
    line-height: 18px
    &:hover 
-      color: black
-      background: white
+      color: white
+      background: black
       .svg 
          path 
             fill: $yel

@@ -138,10 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					speed: 600,
 
 					spaceBetween: 20,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
 
 					navigation: {
 						nextEl: document.querySelector(".info-next"),
@@ -369,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 document.addEventListener('DOMContentLoaded', function () {
   const swiper1 = new Swiper('.swiper1', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     autoHeight: false,
     spaceBetween: 18,
     pagination: {
@@ -394,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1200: {
         spaceBetween: 18,
-        slidesPerView: 3
+        slidesPerView: 2
       }
     }
   });
@@ -428,7 +424,36 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-
+  const swiper3 = new Swiper('.swiper3', {
+    slidesPerView: 2,
+    autoHeight: false,
+    spaceBetween: 18,
+    pagination: {
+        el: ".swiper-pagination3",
+        type: "progressbar",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 5,
+        autoHeight: true,
+        loop: true,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 10,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 18,
+        slidesPerView: 2
+      },
+      1200: {
+        spaceBetween: 18,
+        slidesPerView: 2
+      }
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
