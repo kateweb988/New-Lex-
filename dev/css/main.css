@@ -4400,6 +4400,14 @@ input.error {
   height: 101vh;
 }
 
+.swiper-pagination4 {
+  margin-bottom: 30px;
+}
+
+.swiper4 {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1300px) {
   .what__item {
     width: 32.1%;
@@ -4646,7 +4654,7 @@ input.error {
     padding: 50px 0;
   }
   .rev {
-    padding: 0px 0 50px;
+    padding: 50px 0;
   }
   .rev .container {
     padding-bottom: 126px;
@@ -5126,8 +5134,11 @@ input.error {
   .start {
     padding: 30px 0;
   }
+  .swiper-pagination4 {
+    margin-top: 30px;
+  }
   .law {
-    padding: 60px 0 50px;
+    padding: 60px 0 75px;
   }
   .law .container {
     position: relative;
@@ -5135,15 +5146,12 @@ input.error {
   .law__top {
     margin-bottom: 40px;
   }
-  .law__box {
-    flex-direction: column;
-  }
   .law__item {
     width: 100%;
   }
   .law__top .btn {
     position: absolute;
-    bottom: -47px;
+    bottom: -82px;
     left: 2%;
     width: 96%;
     border-radius: 0;

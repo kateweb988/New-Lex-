@@ -454,6 +454,34 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+  const swiper4 = new Swiper('.swiper4', {
+    slidesPerView: 2,
+    autoHeight: false,
+    spaceBetween: 0,
+    pagination: {
+        el: ".swiper-pagination4",
+        type: "progressbar",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 0,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 0,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 0,
+        slidesPerView: 2
+      },
+      1200: {
+        spaceBetween: 0,
+        slidesPerView: 2
+      }
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
