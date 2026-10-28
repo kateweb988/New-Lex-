@@ -313,12 +313,12 @@
       width: 23.3%
    .law__top h2
       max-width: 500px
-   .our .swiper3 .swiper-slide h3
+   .our .swiper3 .swiper-slide h3, .posts__item h3
       font-size: 23px
       line-height: 120%
-   .our .swiper3 .swiper-slide
+   .our .swiper3 .swiper-slide, .posts__item
       padding: 20px
-   .our__btns .btn
+   .our__btns .btn, .posts__item .btn
       font-size: 14px
       padding: 14px
    .rev .swiper1 .swiper-slide h3
@@ -337,6 +337,10 @@
       .popup-call__box
          width: 800px
          margin-left: -400px
+   .posts__item
+      width: 48.9%
+   .posts h1
+      margin-bottom: 20px
 @media ( max-width: 991px )
    .help3 .help__block
       width: 100%
@@ -569,6 +573,10 @@
          margin-left: -300px
       .order__light
          transform: rotate(-90deg)
+   .posts__item
+      width: 100%
+   .posts__box
+      gap: 30px
 @media screen and (max-width: 767px)
    .copy__item
       width: 100% !important
@@ -959,7 +967,7 @@
          background: white
    .our__top
       margin-bottom: 36px
-   .our .swiper3 .swiper-slide h3
+   .our .swiper3 .swiper-slide h3, .posts__item h3
       margin-bottom: 28px
    .our .swiper3
       overflow: hidden
@@ -969,10 +977,17 @@
       width: 100%
       height: 49px
    .our__btns
+      position: relative
+      top: 24px
       min-height: 108px
-   .our .swiper3 .swiper-slide p
+   .posts__btn
+      width: 100%
+   .posts__item
+      &:nth-child(n+5)
+         display: none
+   .our .swiper3 .swiper-slide p, .posts__item p
       margin-bottom: 100px
-   .our .swiper3 .swiper-slide 
+   .our .swiper3 .swiper-slide, .posts__item
       padding: 20px 20px 50px
    .rev .swiper1
       width: 100%

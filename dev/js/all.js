@@ -557,6 +557,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 });
+document.querySelectorAll('.file-upload').forEach(upload => {
+   const input = upload.querySelector('.file-upload__input');
+   const text = upload.querySelector('.file-upload__text');
+
+   if (!input || !text) return;
+
+   const defaultText = text.textContent;
+
+   input.addEventListener('change', () => {
+      text.textContent = input.files.length
+         ? input.files[0].name
+         : defaultText;
+   });
+});
 // Замена <img class="svg"> на inline SVG
 document.addEventListener("DOMContentLoaded", () => {
   const svgImages = document.querySelectorAll('img.svg');

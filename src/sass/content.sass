@@ -916,7 +916,7 @@ input:checked ~ .text::after
       max-width: 426px
       margin: 0 auto 
       input 
-         margin-bottom: 64px
+         margin-bottom: 37px
          width: 100%
          padding-bottom: 18px
          border: none 
@@ -3238,10 +3238,104 @@ input.error
    margin-bottom: 30px
 .swiper4
    overflow: hidden
-
-
-            
-
+.posts 
+   padding: 23px 0 71px 
+   .bread 
+      a, p 
+         color: #000
+         opacity: 0.5
+         &:after 
+            color: #000
+            opacity: 0.5
+      a:hover 
+         color: $yel
+   h1 
+      color: #000
+      margin-bottom: 54px
+   &__box 
+      display: flex
+      gap: 80px 20px 
+      flex-wrap: wrap
+   &__btn 
+      height: 49px
+      width: 185px
+      margin: 46px auto 0
+   &__item 
+      position: relative
+      padding: 30px 40px
+      height: auto
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 49%
+      h3 
+         margin-top: 0
+         margin-bottom: 36px
+         width: 100%
+         max-width: 529px
+         font-weight: 600
+         font-size: 24px
+         line-height: 29px
+         color: #000000
+      h4 
+         margin-top: 0
+         margin-bottom: 10px 
+         font-weight: 800
+         font-size: 18px
+         line-height: 21px
+         color: #000000
+      p 
+         width: 100%
+         max-width: 375px 
+         font-weight: 400
+         font-size: 14px
+         line-height: 22px
+         color: #000000
+         margin-bottom: 192px
+      img 
+         position: absolute
+         bottom: 0
+         left: 0
+         width: 100%
+         height: 237px
+         z-index: -1
+         object-fit: cover
+.file-upload
+   display: flex
+   align-items: center
+   max-width: 100%
+   min-width: 0
+   margin: 32px 0 37px
+   &__input
+      position: absolute
+      width: 1px
+      height: 1px
+      opacity: 0
+      overflow: hidden
+      &:focus-visible + .file-upload__label
+         outline: 2px solid currentColor
+         outline-offset: 5px
+   &__label
+      display: inline-flex
+      align-items: center
+      gap: 12px
+      cursor: pointer
+      transition: 0.5s 
+      max-width: 100%
+      min-width: 0
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.06em
+      color: #FFFFFF
+      opacity: 0.7
+      &:hover
+         color: $yel
+         .svg 
+            path 
+               stroke: $yel
+   &__text
+      overflow-wrap: anywhere
 
 
 
