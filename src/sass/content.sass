@@ -987,6 +987,31 @@ input:checked ~ .text::after
          color: #ffffff
          line-height: 18px
          align-items: flex-start
+   .file-upload__remove
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 32px
+      height: 32px
+      padding: 0
+      margin: 0
+      border: none
+      background: transparent
+      color: #FFFFFF
+      cursor: pointer
+      flex-shrink: 0
+      transition: color 0.5s ease, opacity 0.5s ease
+      margin: 0
+      &:hover
+         color: $yel
+      svg
+         width: 26px
+         height: 26px
+         display: block
+         path
+            stroke: currentColor
+            transition: stroke 0.5s ease
+
 .footer 
    padding-top: 66px
    &__info 
@@ -2802,6 +2827,30 @@ input.error
          width: 100%
          height: 68px
          margin-top: 44px
+      .file-upload__remove
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 32px
+         height: 32px
+         padding: 0
+         margin: 0
+         border: none
+         background: transparent
+         color: #FFFFFF
+         cursor: pointer
+         flex-shrink: 0
+         transition: color 0.5s ease, opacity 0.5s ease
+         margin: 0
+         &:hover
+            color: $yel
+         svg
+            width: 26px
+            height: 26px
+            display: block
+         path
+            stroke: currentColor
+            transition: stroke 0.5s ease
       input 
          margin-bottom: 48px
          border-bottom: 1px solid rgb(38,38,38)
@@ -3302,10 +3351,13 @@ input.error
          object-fit: cover
 .file-upload
    display: flex
-   align-items: center
+   flex-direction: column
+   align-items: flex-start
    max-width: 100%
    min-width: 0
+   width: 100%
    margin: 32px 0 37px
+   position: relative
    &__input
       position: absolute
       width: 1px
@@ -3320,7 +3372,7 @@ input.error
       align-items: center
       gap: 12px
       cursor: pointer
-      transition: 0.5s 
+      transition: 0.5s
       max-width: 100%
       min-width: 0
       font-weight: 500
@@ -3331,12 +3383,75 @@ input.error
       opacity: 0.7
       &:hover
          color: $yel
-         .svg 
-            path 
+         opacity: 1
+         svg
+            path
                stroke: $yel
+      svg
+         width: 38px
+         height: 38px
+         flex-shrink: 0
+         path
+            transition: stroke 0.5s ease
    &__text
       overflow-wrap: anywhere
-
+   &__files
+      display: none
+      flex-direction: column
+      gap: 12px
+      width: 100%
+      min-width: 0
+      &.active
+         display: flex
+   &__item
+      display: grid
+      grid-template-columns: 38px minmax(0, 1fr) 32px
+      align-items: center
+      column-gap: 12px
+      width: 100%
+      min-width: 0
+   &__icon
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 38px
+      height: 38px
+      flex-shrink: 0
+      color: #FFFFFF
+      svg
+         width: 100%
+         height: 100%
+         path
+            transition: stroke 0.5s ease
+   &__info
+      display: grid
+      grid-template-columns: minmax(0, 1fr) auto
+      align-items: center
+      column-gap: 6px
+      width: 100%
+      min-width: 0
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.06em
+   &__name
+      display: block
+      min-width: 0
+      width: 100%
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      font-weight: 500
+      font-size: 16px
+      line-height: 19px
+      letter-spacing: 0.06em
+      color: #FFFFFF
+      opacity: 0.7
+   &__size
+      display: block
+      white-space: nowrap
+      color: rgba(255, 255, 255, 0.35)
+   
 
 
 

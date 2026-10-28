@@ -1647,6 +1647,34 @@ input:checked ~ .text::after {
   line-height: 18px;
   align-items: flex-start;
 }
+.order .file-upload__remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.5s ease, opacity 0.5s ease;
+  margin: 0;
+}
+.order .file-upload__remove:hover {
+  color: #FFD41D;
+}
+.order .file-upload__remove svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+.order .file-upload__remove svg path {
+  stroke: currentColor;
+  transition: stroke 0.5s ease;
+}
 
 .footer {
   padding-top: 66px;
@@ -3869,6 +3897,34 @@ input.error {
   height: 68px;
   margin-top: 44px;
 }
+.form .order__form .file-upload__remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.5s ease, opacity 0.5s ease;
+  margin: 0;
+}
+.form .order__form .file-upload__remove:hover {
+  color: #FFD41D;
+}
+.form .order__form .file-upload__remove svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+.form .order__form .file-upload__remove path {
+  stroke: currentColor;
+  transition: stroke 0.5s ease;
+}
 .form .order__form input {
   margin-bottom: 48px;
   border-bottom: 1px solid rgb(38, 38, 38);
@@ -4484,10 +4540,13 @@ input.error {
 
 .file-upload {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 100%;
   min-width: 0;
+  width: 100%;
   margin: 32px 0 37px;
+  position: relative;
 }
 .file-upload__input {
   position: absolute;
@@ -4517,12 +4576,86 @@ input.error {
 }
 .file-upload__label:hover {
   color: #FFD41D;
+  opacity: 1;
 }
-.file-upload__label:hover .svg path {
+.file-upload__label:hover svg path {
   stroke: #FFD41D;
+}
+.file-upload__label svg {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.file-upload__label svg path {
+  transition: stroke 0.5s ease;
 }
 .file-upload__text {
   overflow-wrap: anywhere;
+}
+.file-upload__files {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+.file-upload__files.active {
+  display: flex;
+}
+.file-upload__item {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 32px;
+  align-items: center;
+  column-gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+.file-upload__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  color: #FFFFFF;
+}
+.file-upload__icon svg {
+  width: 100%;
+  height: 100%;
+}
+.file-upload__icon svg path {
+  transition: stroke 0.5s ease;
+}
+.file-upload__info {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 6px;
+  width: 100%;
+  min-width: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+.file-upload__name {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.file-upload__size {
+  display: block;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.35);
 }
 
 @media screen and (max-width: 1300px) {

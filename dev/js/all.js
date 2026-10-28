@@ -557,20 +557,122 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 });
-document.querySelectorAll('.file-upload').forEach(upload => {
-   const input = upload.querySelector('.file-upload__input');
-   const text = upload.querySelector('.file-upload__text');
+function initFileUploads() {
+   document.querySelectorAll('.file-upload').forEach(upload => {
+      const input = upload.querySelector('.file-upload__input');
+      const label = upload.querySelector('.file-upload__label');
+      const list = upload.querySelector('.file-upload__files');
 
-   if (!input || !text) return;
+      if (!input || !label || !list) return;
 
-   const defaultText = text.textContent;
+      let files = [];
 
-   input.addEventListener('change', () => {
-      text.textContent = input.files.length
-         ? input.files[0].name
-         : defaultText;
+      const paperclip = `
+         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.44 11.05L12.25 20.24C9.91 22.58 6.11 22.58 3.77 20.24C1.43 17.9 1.43 14.1 3.77 11.76L12.96 2.57C14.52 1.01 17.05 1.01 18.61 2.57C20.17 4.13 20.17 6.66 18.61 8.22L9.41 17.41C8.63 18.19 7.37 18.19 6.59 17.41C5.81 16.63 5.81 15.37 6.59 14.59L14.95 6.22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+         </svg>
+      `;
+
+      const cross = `
+         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+         </svg>
+      `;
+
+      function formatSize(bytes) {
+         return (bytes / (1024 * 1024)).toFixed(1) + ' МБ';
+      }
+
+      function syncInput() {
+         const transfer = new DataTransfer();
+
+         files.forEach(file => {
+            transfer.items.add(file);
+         });
+
+         input.files = transfer.files;
+      }
+
+      function renderFiles() {
+         list.innerHTML = '';
+
+         const hasFiles = files.length > 0;
+
+         label.style.display = hasFiles ? 'none' : 'inline-flex';
+         list.classList.toggle('active', hasFiles);
+
+         files.forEach((file, index) => {
+            const item = document.createElement('div');
+            item.className = 'file-upload__item';
+
+            const icon = document.createElement('div');
+            icon.className = 'file-upload__icon';
+            icon.innerHTML = paperclip;
+
+            const info = document.createElement('div');
+            info.className = 'file-upload__info';
+
+            const name = document.createElement('span');
+            name.className = 'file-upload__name';
+            name.textContent = file.name;
+            name.title = file.name;
+
+            const size = document.createElement('span');
+            size.className = 'file-upload__size';
+            size.textContent = formatSize(file.size);
+
+            const remove = document.createElement('button');
+            remove.type = 'button';
+            remove.className = 'file-upload__remove';
+            remove.setAttribute('aria-label', `Удалить ${file.name}`);
+            remove.innerHTML = cross;
+
+            remove.addEventListener('click', () => {
+               files.splice(index, 1);
+               syncInput();
+               renderFiles();
+            });
+
+            info.append(name, size);
+            item.append(icon, info, remove);
+            list.append(item);
+         });
+      }
+
+      input.addEventListener('change', () => {
+         const selectedFiles = Array.from(input.files);
+
+         selectedFiles.forEach(file => {
+            const exists = files.some(existing =>
+               existing.name === file.name &&
+               existing.size === file.size &&
+               existing.lastModified === file.lastModified
+            );
+
+            if (!exists) files.push(file);
+         });
+
+         syncInput();
+         renderFiles();
+      });
+
+      label.addEventListener('click', event => {
+         event.preventDefault();
+         input.click();
+      });
+
+      list.addEventListener('click', event => {
+         if (event.target.closest('.file-upload__remove')) return;
+         input.click();
+      });
+
+      renderFiles();
    });
-});
+}
+
+document.addEventListener('DOMContentLoaded', initFileUploads);
+
+document.addEventListener('DOMContentLoaded', initFileUploads);
 // Замена <img class="svg"> на inline SVG
 document.addEventListener("DOMContentLoaded", () => {
   const svgImages = document.querySelectorAll('img.svg');
